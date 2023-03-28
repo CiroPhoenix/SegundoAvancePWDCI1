@@ -128,6 +128,7 @@ if(isset($_POST["Registrar"])){
                         <option value="0">¿Cual es su Rol?</option>
                         <option value="1">Maestro</option>
                         <option value="2">Estudiante</option>
+                        <option value="3">Administrador</option>
 
                     </select>
 
@@ -211,5 +212,5 @@ if(isset($_POST["Registrar"])){
     </form>
    
 </body>
-
+<script src="Foto.js"></script>
 </html>

@@ -131,6 +131,7 @@ if(isset($_POST["Editar"])){
                         <option value="0">¿Cual es su Rol?</option>
                         <option value="1">Maestro</option>
                         <option value="2">Estudiante</option>
+                        <option value="3">Administrador</option>
 
                     </select>
 
@@ -214,5 +215,5 @@ if(isset($_POST["Editar"])){
     </form>
    
 </body>
-
+<script src="Foto.js"></script>
 </html>
