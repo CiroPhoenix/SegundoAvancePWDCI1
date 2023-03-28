@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `proyecto_bdm`.`usuario` (
   `Nombre_Usuario` VARCHAR(45) NOT NULL,
   `NomPatr_Usuario` VARCHAR(45) NOT NULL,
   `NomMatr_Usuario` VARCHAR(45) NOT NULL,
-  `Rol_Usuario` enum ('Maestro','Estudiante'),
+  `Rol_Usuario` enum ('Maestro','Estudiante','Administrador'),
   `Genero_Usuario` enum('Masculino','Femenino'),
   `Nacimiento_Usuario` DATETIME NOT NULL,
   `Nombre_usuario_Usuario` VARCHAR(45) NOT NULL,
@@ -37,7 +37,7 @@ Contrasena_Usuario='John4';
 Rol_Usuario='Maestro';
   
   ALTER TABLE `proyecto_bdm`.`usuario` MODIFY `Foto_Usuario` BLOB NULL;
-  
+  ALTER TABLE `proyecto_bdm`.`usuario` MODIFY `Rol_Usuario` enum ('Maestro','Estudiante','Administrador');
   
   INSERT INTO `proyecto_bdm`.`usuario` (`Nombre_Usuario`, `NomPatr_Usuario`, `NomMatr_Usuario`, `Genero_Usuario`, `Nacimiento_Usuario`, `Correo_Usuario`, `Contrasena_Usuario`, `Nombre_usuario_Usuario`) VALUES ('Julio', 'Zepeda', 'Soraya', 'M', '1999-01-01 00:00:00', 'juliozep@gmail.com', 'Admin?123', 'Admin');
   
