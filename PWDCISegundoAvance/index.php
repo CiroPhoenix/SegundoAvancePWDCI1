@@ -25,7 +25,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
    <link rel="stylesheet" 
    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-   <script src="js/jquery.js"></script>
+   <script src="jquery.js"></script>
 
 <style>
 
@@ -148,7 +148,21 @@ if(!isset($_SESSION['Nombre_Usuario'])){
                   <li><a class="dropdown-item" href="#">Otros</a></li>
                 </ul>
               </li>
-             
+              <div class="col-md-6">
+
+
+<div class="input-group">
+<input type="text"  placeholder="¿Que te gustaria aprender?" class="form-control" id="inp">
+<div class="input-group-append">
+<button type="button" class="btn btn-dark" id="search" >Buscar</button>
+</div>
+</div>
+</div>
+
+<div class="user-pic">
+              <img src="img/ProfilePicture.png" class="user-pic" onclick="toggleMenu()" >
+            </div>
+          
             </ul>
             <form class="d-flex">
              
@@ -158,10 +172,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
             </form>
 
-            <div class="user-pic">
-              <img src="img/ProfilePicture.png" class="user-pic" onclick="toggleMenu()" >
-            </div>
-          
+         
           </div>
         </div>
 
@@ -175,7 +186,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
 
 
-
+      <img src= '<?php echo 'data:img/jpeg;base64, '.$_SESSION['Foto_Usuario']?>'  alt="">
 
 
 
@@ -200,16 +211,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 <div class="container p-5 mt-2" style="background-image: url('img/Galaxia.jpg'); background-repeat: no-repeat; background-size: cover;   border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74); border-width: 35px;
 border-style: solid;" >
   <div class="row d-flex justify-content-center">
-<div class="col-md-6">
 
-
-<div class="input-group">
-<input type="text"  placeholder="¿Que te gustaria aprender?" class="form-control" id="inp">
-<div class="input-group-append">
-<button type="button" class="btn btn-dark" id="search" >Buscar</button>
-</div>
-</div>
-</div>
 
 
 <div class="cart" >
@@ -571,4 +573,5 @@ subMenu.classList.toggle("open-menu");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
+
 
