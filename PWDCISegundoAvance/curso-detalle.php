@@ -41,6 +41,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
       
 
         <a class="navbar-brand" href="index.php">
+          
             <img src="img/SaturnoLogo.png" alt="logo" width="150px">
           </a>
          
@@ -76,8 +77,11 @@ if(!isset($_SESSION['Nombre_Usuario'])){
                   <li><a class="dropdown-item" href="#">Otros</a></li>
                 </ul>
               </li>
-             
+              <div class="user-pic">
+              <img src="img/ProfilePicture.png" class="user-pic" onclick="toggleMenu()" >
+            </div>
             </ul>
+          
             <form class="d-flex">
              
 
@@ -87,9 +91,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
             </form>
 
 
-            <div class="user-pic">
-              <img src="img/ProfilePicture.png" class="user-pic" onclick="toggleMenu()" >
-            </div>
+          
 
           </div>
         </div>
@@ -99,7 +101,6 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
 
       </nav>
-
 
 
       <div class="sub-menu-wrap" id="subMenu">
@@ -144,6 +145,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
 </div>
 </div>
+      
 
 
 
