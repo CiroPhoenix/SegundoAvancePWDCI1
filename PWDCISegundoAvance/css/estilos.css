@@ -12198,11 +12198,13 @@ height: 128px;
 }
 
 
+
 #ptyhon:checked ~ .imagenes-filtro .videojuegos, #ptyhon:checked ~ .imagenes-filtro .dibujo, #ptyhon:checked ~ .imagenes-filtro .graficas {display: none;}
 #dibujo:checked ~ .imagenes-filtro .videojuegos, #dibujo:checked ~ .imagenes-filtro .ptyhon, #dibujo:checked ~ .imagenes-filtro .graficas {display: none;} 
 #videojuegos:checked ~ .imagenes-filtro .ptyhon, #videojuegos:checked ~ .imagenes-filtro .dibujo, #videojuegos:checked ~ .imagenes-filtro .graficas {display: none;} 
 #graficas:checked ~ .imagenes-filtro .videojuegos, #graficas:checked ~ .imagenes-filtro .dibujo, #graficas:checked ~ .imagenes-filtro .ptyhon {display: none;}  
 /*# sourceMappingURL=bootstrap.min.css.map */
+
 
 
 .contenedor-detalles{
@@ -12278,7 +12280,7 @@ background-color: whitesmoke;
 
 
           .filtro:hover{
-            color: #2079b0;
+            color: purple;
             color: -webkit-linear-gradient(top, #2079b0, #eb94d0);
       color: -moz-linear-gradient(top, #2079b0, #eb94d0);
       color: -ms-linear-gradient(top, #2079b0, #eb94d0);
@@ -12336,6 +12338,7 @@ background-color: whitesmoke;
                   }
 
                   .user-info img{
+
                     width: 60px;
                     border-radius: 50%;
                     margin-right: 15px;
@@ -12343,7 +12346,10 @@ background-color: whitesmoke;
 
 
                   .user-pic img{
+                   position: auto;
                     width: 60px;
+                    right: auto;
+                    top: 100%;
                     border-radius: 50%;
                     margin-right: 15px;
                   }
