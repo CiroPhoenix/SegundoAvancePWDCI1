@@ -61,15 +61,65 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
         
 </head>
+
 <body style="background-image: url('img/SaturnoBackground.jpg');">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="sub-menu-wrap" id="subMenu">
+
+<div class="sub-menu">
+  <div class="user-info">
+    <img src="img/ProfilePicture.png">
+    
+    <p><?php echo $_SESSION['Rol_Usuario']; ?></p>
+</br>
+    <h3><?php echo $_SESSION['Nombre_Usuario']; ?></h3>
+    <h3><?php echo $_SESSION['NomPatr_Usuario']; ?></h3>
+    <h3><?php echo $_SESSION['NomMatr_Usuario']; ?></h3>
+  
+    
+  </div>
+  <hr>
+
+<a href="editar.php" class="sub-menu-link">
+
+<img src="img/Profile.png">
+<p>Editar Perfil</p>
+<span>></span>
+
+</a>
+
+
+<a href="#" class="sub-menu-link">
+
+  <img src="img/Cursos.png">
+  <p>Mis cursos</p>
+<span>></span>
+
+  </a>
+
+
+    <a href="logout.php" class="sub-menu-link">
+
+      <img src="img/Logout.png">
+      <p>Cerrar Sesion</p>
+    <span>></span>
+    
+      </a>
+
+
+</div>
+</div>
         <div class="container-fluid">
+   
         <a class="navbar-brand" href="index.php">
             <img src="img/SaturnoLogo.png" alt="logo" width="150px">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
+          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ">
            <li class="navbar-nav">
@@ -104,8 +154,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
              
 
 
-              <button><a class="link" href="login.php">Iniciar Sesion</a></button>
-              <button><a class="link" href="register.php">Registrarse</a></button>
+           
 
             </form>
 
@@ -117,51 +166,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
         </div>
 
 
-<div class="sub-menu-wrap" id="subMenu">
 
-  <div class="sub-menu">
-    <div class="user-info">
-      <img src="img/ProfilePicture.png">
-      
-      <p><?php echo $_SESSION['Rol_Usuario']; ?></p>
-</br>
-      <h3><?php echo $_SESSION['Nombre_Usuario']; ?></h3>
-      <h3><?php echo $_SESSION['NomPatr_Usuario']; ?></h3>
-      <h3><?php echo $_SESSION['NomMatr_Usuario']; ?></h3>
-    
-      
-    </div>
-    <hr>
-
-  <a href="editar.php" class="sub-menu-link">
-
-  <img src="img/Profile.png">
-  <p>Editar Perfil</p>
-<span>></span>
-
-  </a>
-
-
-  <a href="#" class="sub-menu-link">
-
-    <img src="img/Cursos.png">
-    <p>Mis cursos</p>
-  <span>></span>
-  
-    </a>
-
-
-      <a href="logout.php" class="sub-menu-link">
-
-        <img src="img/Logout.png">
-        <p>Cerrar Sesion</p>
-      <span>></span>
-      
-        </a>
-
-
-  </div>
-</div>
 
 
       </nav>
@@ -192,7 +197,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
 
 
-<div class="container p-5 mt-2" style="background-color: rgb(179, 119, 179); background-repeat: no-repeat; background-size: cover;   border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74); border-width: 35px;
+<div class="container p-5 mt-2" style="background-image: url('img/Galaxia.jpg'); background-repeat: no-repeat; background-size: cover;   border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74); border-width: 35px;
 border-style: solid;" >
   <div class="row d-flex justify-content-center">
 <div class="col-md-6">
@@ -209,10 +214,10 @@ border-style: solid;" >
 
 <div class="cart" >
   <div class="pt-3 pl-0 pb-0 pr-0" style="height: auto; width: auto;">
-  <i class="fas fa-shopping-cart fa-2x ml-md-5">  </i>
+  <i class="fas fa-shopping-cart fa-2x ml-md-5" style="color:white;">  </i>
   </div>
   
-  <span style="background-color: black;" class="badge badge-sucess mt-0 align-self-start" id="cart_item_count" style="margin-left: -25
+  <span style="background-color: purple;" class="badge badge-sucess mt-0 align-self-start" id="cart_item_count" style="margin-left: -25
   px; margin-top: -5px;">0</span>
   
    </div>

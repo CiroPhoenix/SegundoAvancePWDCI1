@@ -5133,7 +5133,7 @@ fieldset:disabled .btn {
 .navbar-dark .navbar-text a,
 .navbar-dark .navbar-text a:focus,
 .navbar-dark .navbar-text a:hover {
-    color: #fff
+    color: #808080
 }
 
 .card {
@@ -12252,7 +12252,7 @@ background-color: whitesmoke;
             box-shadow: 20px 20px 100px -50px #000;
             transition: 0.3s;
           
-            background: #2079b0;
+            background: #7079b0;
             background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
             background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
             background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
@@ -12292,7 +12292,9 @@ background-color: whitesmoke;
 
 
             .sub-menu-wrap{
+                
             position: absolute;
+            display: flex;
             top: 100%;
             right: 10%;
             width: 720px;
@@ -12300,11 +12302,16 @@ background-color: whitesmoke;
             max-height: 0px;
             overflow: hidden;
             transition: max-height 0.5s;
+          
 
             }
 
             .sub-menu-wrap.open-menu{
+                
                 max-height: 400px;
+
+            background-color: purple;
+                
             }
 
 
@@ -12354,7 +12361,7 @@ background-color: whitesmoke;
                   .sub-menu-link{
 
                     display: flex;
-                    align-items: center;
+                    align-items: left;
                     text-decoration: none;
                     color: #525252;
                      margin: 12px 0;

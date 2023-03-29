@@ -35,8 +35,11 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
 </head>
 <body style="background-image: url('img/SaturnoBackground.jpg');">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+      
+
         <a class="navbar-brand" href="index.php">
             <img src="img/SaturnoLogo.png" alt="logo" width="150px">
           </a>
@@ -79,8 +82,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
              
 
 
-              <button><a class="link" href="login.html">Iniciar Sesion</a></button>
-              <button><a class="link" href="register.html">Registrarse</a></button>
+     
 
             </form>
 
@@ -92,49 +94,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
           </div>
         </div>
 
-        <div class="sub-menu-wrap" id="subMenu">
-
-          <div class="sub-menu">
-            <div class="user-info">
-              <img src="img/ProfilePicture.png">
-              <p><?php echo $_SESSION['Rol_Usuario']; ?></p>
-              <br>
-              <h3><h3><?php echo $_SESSION['Nombre_Usuario']; ?></h3></h3>
-              <h3><?php echo $_SESSION['NomPatr_Usuario']; ?></h3>
-             <h3><?php echo $_SESSION['NomMatr_Usuario']; ?></h3>
-            </div>
-            <hr>
-        
-          <a href="editar.php" class="sub-menu-link">
-        
-          <img src="img/Profile.png">
-          <p>Editar Perfil</p>
-        <span>></span>
-        
-          </a>
-        
-
-          <a href="#" class="sub-menu-link">
-
-            <img src="img/Cursos.png">
-            <p>Mis cursos</p>
-          <span>></span>
-          
-            </a>
-        
-        
-              <a href="logout.php" class="sub-menu-link">
-        
-                <img src="img/Logout.png">
-                <p>Cerrar Sesion</p>
-              <span>></span>
-              
-                </a>
-        
-        
-          </div>
-        </div>
-
+      
 
 
 
@@ -142,7 +102,48 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
 
 
+      <div class="sub-menu-wrap" id="subMenu">
 
+<div class="sub-menu">
+  <div class="user-info">
+    <img src="img/ProfilePicture.png">
+    <p><?php echo $_SESSION['Rol_Usuario']; ?></p>
+    <br>
+    <h3><h3><?php echo $_SESSION['Nombre_Usuario']; ?></h3></h3>
+    <h3><?php echo $_SESSION['NomPatr_Usuario']; ?></h3>
+   <h3><?php echo $_SESSION['NomMatr_Usuario']; ?></h3>
+  </div>
+  <hr>
+
+<a href="editar.php" class="sub-menu-link">
+
+<img src="img/Profile.png">
+<p>Editar Perfil</p>
+<span>></span>
+
+</a>
+
+
+<a href="#" class="sub-menu-link">
+
+  <img src="img/Cursos.png">
+  <p>Mis cursos</p>
+<span>></span>
+
+  </a>
+
+
+    <a href="logout.php" class="sub-menu-link">
+
+      <img src="img/Logout.png">
+      <p>Cerrar Sesion</p>
+    <span>></span>
+    
+      </a>
+
+
+</div>
+</div>
 
 
 
