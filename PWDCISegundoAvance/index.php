@@ -181,7 +181,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 </div>
 
 
-<div class="container p-5 mt-2" style="background-color: rgb(179, 179, 179); background-repeat: no-repeat; background-size: cover;   border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74); border-width: 20px;
+<div class="container p-5 mt-2" style="background-color: rgb(179, 119, 179); background-repeat: no-repeat; background-size: cover;   border-color: rgb(255, 102, 151) rgb(120, 0, 74) rgb(255, 102, 151) rgb(120, 0, 74); border-width: 35px;
 border-style: solid;" >
   <div class="row d-flex justify-content-center">
 <div class="col-md-6">

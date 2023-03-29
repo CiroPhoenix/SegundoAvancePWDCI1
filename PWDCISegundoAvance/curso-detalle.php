@@ -187,6 +187,8 @@ if(!isset($_SESSION['Nombre_Usuario'])){
           <div class="carousel-item ">
             <img src="img/Graficas3.jpg"  class="d-block w-100">
           </div>
+
+         
         
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
@@ -205,7 +207,13 @@ if(!isset($_SESSION['Nombre_Usuario'])){
 
     </div>
     <div class="col-md-6 order-md-2">
-<h2 class="card-title">Curso de Graficas</h2>
+    <video width="400" controls>
+  <source src="Curso1.mp4" type="video/mp4">
+ 
+  Your browser does not support HTML video.
+</video>
+    <h2 class="card-title">Curso de Graficas</h2>
+
 <h2>$ 150.00 MX</h2>
 <p>Lo que vas a aprender:</p>
 <p class="lead">
